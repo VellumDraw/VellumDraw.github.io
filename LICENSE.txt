@@ -1,0 +1,64 @@
+VELLUM FREEWARE LICENSE AGREEMENT
+
+Copyright (c) 2026 Kosit Jariyatatsakorn. All rights reserved.
+
+This agreement covers the Vellum software (vellum.exe, vellum-mcp.exe), its
+documentation, sample drawings and any updates (together, "the software").
+By installing or using the software you accept these terms. If you do not
+accept them, do not install or use the software.
+
+1. LICENSE
+   You may download, install and use the software free of charge, on any
+   number of computers, for personal, academic and commercial work.
+
+2. YOUR DRAWINGS
+   Drawings, figures and files you create with the software belong to you.
+   You may use, publish and sell them without any obligation to the
+   copyright holder.
+
+3. SHARING
+   You may give copies of the original, unmodified software to others,
+   provided it is free of charge and this agreement and the file
+   THIRD-PARTY-NOTICES.txt are included.
+
+4. RESTRICTIONS
+   You may not:
+   (a) sell, rent, lease or sublicense the software, or charge for it;
+   (b) modify, adapt or translate the software or make derivative works
+       from it;
+   (c) reverse engineer, decompile or disassemble the software, except
+       where the law expressly allows it despite this restriction;
+   (d) remove or change any copyright notice, licence text or disclaimer
+       in the software.
+
+5. OWNERSHIP
+   The software is licensed, not sold. The copyright holder keeps all
+   rights in the software, its source code, design and documentation that
+   this agreement does not expressly grant to you.
+
+6. THIRD-PARTY COMPONENTS
+   The software includes open-source components. Each is used under its
+   own licence, listed with its copyright notice in THIRD-PARTY-NOTICES.txt.
+   Nothing in this agreement limits your rights under those licences.
+
+7. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, ACCURACY AND NON-INFRINGEMENT. You are
+   responsible for checking that figures made with the software are
+   correct before you rely on them or publish them.
+
+8. LIMITATION OF LIABILITY
+   TO THE EXTENT THE LAW ALLOWS, THE COPYRIGHT HOLDER IS NOT LIABLE FOR ANY
+   DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, INCLUDING
+   LOSS OF DATA, PROFITS OR WORK, ARISING FROM THE USE OF OR INABILITY TO
+   USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+9. TRADEMARKS
+   Microsoft, Word and PowerPoint are trademarks of Microsoft Corporation.
+   Other product names are the trademarks of their owners. The software is
+   not affiliated with or endorsed by any of them.
+
+10. TERMINATION
+   This licence ends automatically if you break its terms. You must then
+   stop using the software and delete all copies.

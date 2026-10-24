@@ -234,3 +234,5 @@ td { color: var(--ink-2); }
 }
 
 .split > *, .dl > *, .feature > *, .gallery > *, .doc > * { min-width: 0; }
+
+figure.wide { margin-bottom: 18px; }
