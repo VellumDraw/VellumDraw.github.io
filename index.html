@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vellum: diagrams for publication figures</title>
+<meta name="description" content="Vellum is a light, fast diagram editor for publication figures. Draw flow charts and geotechnical sections, paste them into Word as vector EMF, and let an AI assistant draw through MCP.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon-256.png" alt="">Vellum</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#agents">AI drawing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="manual.html">Manual</a>
+      <a class="btn small primary" href="#download">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Diagram editor · Windows · v0.1</p>
+    <h1>Figures for the paper, drawn by you <em>or your agent.</em></h1>
+    <p class="lede">Vellum draws the figures a research lab makes every day: flow charts, soil
+      profiles, footings, test set-ups and process circuits. Paste them into Word as sharp
+      vector pictures at their true size, or let an AI assistant build them through the
+      Model Context Protocol while you watch.</p>
+    <div class="cta">
+      <a class="btn primary" href="#download">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+        Download for Windows
+      </a>
+      <a class="btn" href="manual.html">Read the manual</a>
+      <span class="note">Free · one 19 MB program · no installer needed</span>
+    </div>
+    <div class="shot"><img src="assets/screenshot.jpg" width="1800" height="1065" alt="The Vellum window with a design flow chart for an MSE wall open on an A4 page, the Shapes pane on the left and the Properties pane on the right"></div>
+  </div>
+</div>
+
+<div class="stats wrap flush">
+  <div class="stat"><b>47</b><span>MCP tools: everything the menus do</span></div>
+  <div class="stat"><b>5</b><span>export formats: EMF, PDF, SVG, PNG, .vsdx</span></div>
+  <div class="stat"><b>8</b><span>soil and material hatches drawn as real geometry</span></div>
+  <div class="stat"><b>1:1</b><span>true size in Word, with drawing scales on the page</span></div>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <h2>The parts you use every day, done properly.</h2>
+    <p class="sub">Shapes, glued connectors and text with subscripts, plus the symbols an
+      engineering lab needs, in one small program that starts instantly.</p>
+
+    <div class="feature">
+      <div class="feature-text">
+        <p class="eyebrow">Equation editor</p>
+        <h3>Equations set as Office sets them.</h3>
+        <p>Insert &gt; Equation (Alt+=) opens an editor with symbol and template palettes,
+          ready-made formulas by subject (algebra, calculus, statistics, mechanics, soils),
+          the LaTeX source and a live preview. Equations sit inside a label or a sentence in
+          Cambria Math. With <b>Editable in Office</b> on they paste into Word and PowerPoint as
+          Office equations, and equations copied from Word paste back as Vellum equations.</p>
+      </div>
+      <figure class="frame"><img src="assets/feature-equation.jpg" width="1600" height="846" loading="lazy" alt="The Equation dialog in Vellum showing symbol palettes, a Soils tab of ready-made formulas and a live preview of the unit-weight equation"></figure>
+    </div>
+
+    <div class="feature flip">
+      <div class="feature-text">
+        <p class="eyebrow">Engineering drawings at scale</p>
+        <h3>Set the page to 1:50 in metres and draw in metres.</h3>
+        <p>Rulers, dimensions and Size &amp; Position read in the drawing scale. Soil layers
+          (sand, clay, silt, gravel, rock, peat, concrete, made ground), water table, ground
+          surface, footings, piles, loads, supports and anchors come from the engineering
+          stencil, and every hatch is real geometry, so it survives EMF, PDF and .vsdx.</p>
+      </div>
+      <figure class="frame"><img src="assets/feature-geotech.jpg" width="1600" height="964" loading="lazy" alt="A footing on layered soil drawn at 1:50 in Vellum, with rulers in metres, sand, clay and rock hatches, a water table symbol and dimensions"></figure>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+        <h3>Paste into Word, still vector</h3>
+        <p>Ctrl+C puts a vector EMF on the clipboard at the drawing's true size, so the figure
+          stays sharp in the thesis and the journal proof.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h4a3 3 0 0 1 3 3v6"/></svg></div>
+        <h3>Connectors that stay glued</h3>
+        <p>Right-angle, straight or curved connectors follow their shapes, hop over earlier
+          lines where they cross, and carry labels and ten arrowhead styles.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h4l2 3h4l2-3h4M12 10v10M8 20h8"/></svg></div>
+        <h3>Process and P&amp;ID symbols</h3>
+        <p>Valves, instruments, pumps, vessels and heat exchangers to ISO 10628 / ISA-5.1, each
+          gluing at its own pipe ends and nozzles.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h9l5 5v11H5z"/><path d="M14 4v5h5"/></svg></div>
+        <h3>.vsdx in and out</h3>
+        <p>Open .vsdx diagrams with masters, groups and glue, and save .vsdx with connectors
+          still attached for colleagues who use other diagram editors.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 15 5-5 4 4 3-3 6 6"/></svg></div>
+        <h3>Figures from other programs</h3>
+        <p>Paste a chart from Origin, Excel or PowerPoint; an EMF stays vector, and Convert to
+          shapes turns it into editable lines and text.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg></div>
+        <h3>Text styles and Thai</h3>
+        <p>Label markup such as <code>m^3</code> and <code>k_{sat}</code>, named text styles that labels follow, and Thai set
+          in its own font (Sarabun by default).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="agents" class="alt">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Model Context Protocol</p>
+      <h2>Describe the figure. The agent draws it.</h2>
+      <p class="sub">vellum-mcp exposes every command as a tool, so an assistant such as
+        Claude can do anything the menus can. It renders the page to check its own work, and
+        you watch it happen in the Vellum window.</p>
+      <ol class="steps">
+        <li><b>Register the server once.</b> One line in Claude Code, or a few lines of JSON in
+          Claude Desktop.</li>
+        <li><b>Ask in plain words.</b> Paste your notes, slides or a sketch and say what the
+          figure should show.</li>
+        <li><b>Edit by hand or by asking.</b> The drawing is ordinary Vellum shapes: move them,
+          restyle them, or ask for changes.</li>
+      </ol>
+<pre class="code"><span class="c"># Claude Code</span>
+claude mcp add vellum -- "%LOCALAPPDATA%\Programs\Vellum\vellum-mcp.exe"</pre>
+      <p class="prompt">“Draw a strip footing on 2 m of sand over soft clay with the water table
+        at 1.5 m, at 1:50, and copy it for Word.”</p>
+      <p class="more"><a href="manual.html#mcp">MCP setup for every client →</a></p>
+    </div>
+    <figure class="sheet">
+      <img src="assets/mse-wall-flowchart.png" width="1323" height="1871" loading="lazy" alt="An A4 design flow chart for a geogrid-reinforced MSE wall with two illustrations, drawn by an AI assistant through Vellum's MCP server">
+      <figcaption>Drawn entirely through MCP: an A4 design flow chart for a geogrid-reinforced
+        MSE wall, summarised from lecture slides, with its two illustrations.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>Made in Vellum.</h2>
+    <p class="sub">Every figure on this page was drawn in Vellum and exported straight from it.</p>
+    <div class="gallery">
+      <figure class="sheet"><img src="assets/footing.png" loading="lazy" alt="Cross-section of a footing on medium dense sand over soft clay and bedrock, with a column load, water table and dimensions">
+        <figcaption>A footing on layered soil at 1:50: soil hatches, water table, loads and
+          dimensions that read in metres.</figcaption></figure>
+      <figure class="sheet"><img src="assets/procedure.png" loading="lazy" alt="A flow chart of a triaxial test procedure from sampling to Mohr circles">
+        <figcaption>A test procedure as a flow chart, connectors glued and routed.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="word" class="alt">
+  <div class="wrap">
+    <h2>From the drawing to the document.</h2>
+    <p class="sub">Three ways to get a figure out, all keeping it vector.</p>
+    <div class="word">
+      <div><h3><kbd>Ctrl</kbd> + <kbd>C</kbd></h3><p>Copy the selection or the whole drawing as a
+        vector EMF and paste it into Word or PowerPoint at its true size.</p></div>
+      <div><h3>Editable in Office</h3><p>Turn it on to paste editable Office shapes and equations
+        instead, with sub- and superscripts, Thai and hatches.</p></div>
+      <div><h3><kbd>Ctrl</kbd> + <kbd>E</kbd></h3><p>Export EMF, PDF with fonts embedded, SVG in
+        millimetres, PNG at 300 to 1200 dpi, or .vsdx.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="wrap dl">
+    <div>
+      <p class="eyebrow">Download</p>
+      <h2>Get Vellum for Windows.</h2>
+      <p class="sub">Unzip and run. Nothing to install, nothing to sign up for.</p>
+      <p class="fine">Windows may show a SmartScreen warning the first time because the program is
+        not code-signed: choose <b>More info</b>, then <b>Run anyway</b>.</p>
+    </div>
+    <div class="dl-card">
+      <h3>Windows</h3>
+      <p class="meta">x64 · Windows 10 and 11 · .zip</p>
+      <a class="btn primary" href="https://github.com/VellumDraw/VellumDraw.github.io/releases/latest/download/vellum-windows-x64.zip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+        Download the latest version
+      </a>
+      <ul>
+        <li><code>vellum.exe</code>: the editor</li>
+        <li><code>vellum-mcp.exe</code>: the MCP server for AI assistants</li>
+        <li>A sample drawing to start from</li>
+      </ul>
+      <p class="fine more"><a href="https://github.com/VellumDraw/VellumDraw.github.io/releases">All releases and release notes →</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Vellum · a diagram editor for publication figures</span>
+    <span>Word and PowerPoint are trademarks of Microsoft Corporation. Vellum is not affiliated with Microsoft.</span>
+  </div>
+</footer>
+</body>
+</html>

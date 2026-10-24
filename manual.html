@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vellum manual</title>
+<meta name="description" content="Install Vellum, draw your first figure, paste it into Word, and connect an AI assistant through MCP.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon-256.png" alt="">Vellum</a>
+    <nav>
+      <a href="./#features">Features</a>
+      <a href="./#agents">AI drawing</a>
+      <a href="manual.html">Manual</a>
+      <a class="btn small primary" href="./#download">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <nav class="toc" aria-label="Contents">
+    <a href="#install">Install</a>
+    <a href="#first">Your first figure</a>
+    <a href="#scale">Drawing at scale</a>
+    <a href="#text">Text and equations</a>
+    <a href="#word">Word and PowerPoint</a>
+    <a href="#keys">Keys</a>
+    <a href="#mcp">AI drawing (MCP)</a>
+    <a href="#trouble">Troubleshooting</a>
+  </nav>
+
+  <article>
+    <p class="eyebrow">Manual</p>
+    <h1>Using Vellum</h1>
+    <p>Vellum is a diagram editor for publication figures. This page covers what you need to
+      start: installing, drawing, getting figures into Word, and letting an AI assistant draw
+      for you.</p>
+
+    <h2 id="install">Install</h2>
+    <ol>
+      <li>Download <code>vellum-windows-x64.zip</code> from the <a href="./#download">download section</a>.</li>
+      <li>Unzip it to a folder you keep, for example <code>%LOCALAPPDATA%\Programs\Vellum</code>.</li>
+      <li>Run <code>vellum.exe</code>. Pin it to Start or the taskbar if you like.</li>
+    </ol>
+    <div class="callout"><p>Windows may warn that the program is from an unknown publisher,
+      because it is not code-signed. Choose <b>More info</b>, then <b>Run anyway</b>.</p></div>
+    <p>Drawings are saved as <code>.vlm</code> files. Vellum also opens and saves
+      <code>.vsdx</code>.</p>
+
+    <h2 id="first">Your first figure</h2>
+    <ol>
+      <li><b>Pick a page.</b> With nothing selected, the Properties pane shows the page: choose
+        a paper size such as A4 or Letter, or a journal figure width (85, 120 or 175 mm).</li>
+      <li><b>Place shapes.</b> Click a shape in the Shapes pane, then click or drag on the
+        page. The Engineering group has soil layers, footings, piles, loads and the water
+        table; the Process group has valves, pumps and instruments.</li>
+      <li><b>Connect them.</b> Press <kbd>C</kbd> and drag from one shape to another. The
+        connector stays glued when you move either shape.</li>
+      <li><b>Type labels.</b> Select a shape and just start typing.</li>
+      <li><b>Style it.</b> The Properties pane sets fill, hatch, line, shadow and text; Arrange
+        aligns, distributes and lays out flow charts automatically.</li>
+    </ol>
+
+    <h2 id="scale">Drawing at scale</h2>
+    <p>Set a drawing scale in the Page pane (for example <b>1:50 in m</b>). The rulers,
+      dimensions and Size &amp; Position then read in metres, so a 2.0 m footing is typed as
+      2.0 m. The printed page stays in millimetres.</p>
+    <p>Soil layers are rectangles with a hatch: sand, clay, silt, gravel, rock, peat, concrete
+      or made ground. Hatches are drawn as real lines, so they print and paste exactly.</p>
+
+    <h2 id="text">Text and equations</h2>
+    <p>Labels understand a small markup:</p>
+    <table>
+      <tr><th>Type</th><th>Shows</th></tr>
+      <tr><td><code>m^3</code></td><td>m³</td></tr>
+      <tr><td><code>k_{sat}</code></td><td>k<sub>sat</sub></td></tr>
+      <tr><td><code>\sigma_v'</code></td><td>σ<sub>v</sub>′</td></tr>
+      <tr><td><code>$\Delta h$</code></td><td>Δh</td></tr>
+      <tr><td><code>\it{in situ}</code></td><td><i>in situ</i></td></tr>
+    </table>
+    <p>Thai text is set in the document's Thai font (Sarabun by default).</p>
+    <p><b>Equations:</b> Insert &gt; Equation (<kbd>Alt</kbd>+<kbd>=</kbd>) opens the
+      equation editor, with symbol palettes, templates, ready-made formulas by subject and the
+      LaTeX source. Double-click an equation to edit it again.</p>
+
+    <h2 id="word">Word and PowerPoint</h2>
+    <ul>
+      <li><kbd>Ctrl</kbd>+<kbd>C</kbd> copies the selection (or, with nothing selected, the
+        drawing) as a vector EMF. Paste it into Word or PowerPoint: it arrives at its true
+        size and stays sharp at any zoom.</li>
+      <li>Turn on <b>Editable in Office</b> (Home &gt; Clipboard) to paste editable Office
+        shapes and equations instead.</li>
+      <li><b>Copy for Word</b> (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>) always copies one
+        vector picture.</li>
+      <li>Charts copied from Origin, Excel or PowerPoint paste into Vellum and stay vector;
+        right-click &gt; Convert to shapes makes them editable.</li>
+    </ul>
+
+    <h2 id="keys">Keys</h2>
+    <table>
+      <tr><th>Key</th><th>Action</th></tr>
+      <tr><td>V, H</td><td>Select, pan (or hold Space / middle button)</td></tr>
+      <tr><td>R, O, T</td><td>Rectangle, ellipse, text</td></tr>
+      <tr><td>L, P, C, D</td><td>Line (Shift = 45°), polyline (Enter ends), connector, dimension</td></tr>
+      <tr><td>Ctrl+C, Ctrl+Shift+C</td><td>Copy selection / whole drawing</td></tr>
+      <tr><td>Ctrl+V, Ctrl+X, Ctrl+D, Del</td><td>Paste, cut, duplicate, delete</td></tr>
+      <tr><td>Ctrl+G, Ctrl+Shift+G</td><td>Group, ungroup</td></tr>
+      <tr><td>Arrows, Shift+arrows</td><td>Nudge 1 mm, 0.1 mm</td></tr>
+      <tr><td>F2, double-click, or just type</td><td>Edit text (Ctrl+Enter or click outside to finish)</td></tr>
+      <tr><td>Alt+=</td><td>Insert an equation</td></tr>
+      <tr><td>Ctrl+Z, Ctrl+Y</td><td>Undo, redo</td></tr>
+      <tr><td>Ctrl+0, Ctrl+1, Ctrl+wheel</td><td>Fit page, actual size, zoom</td></tr>
+      <tr><td>Ctrl+E</td><td>Export</td></tr>
+      <tr><td>Drag from a ruler</td><td>New guide</td></tr>
+    </table>
+
+    <h2 id="mcp">AI drawing (MCP)</h2>
+    <p><code>vellum-mcp.exe</code> is a <a href="https://modelcontextprotocol.io">Model Context
+      Protocol</a> server. Every Vellum command is a tool, so an assistant can do anything the
+      menus can. With the Vellum window open, the assistant draws in it and you watch;
+      without a window it works in the background and saves or exports files.</p>
+
+    <h3>Claude Code</h3>
+<pre class="code">claude mcp add vellum -- "%LOCALAPPDATA%\Programs\Vellum\vellum-mcp.exe"</pre>
+    <p>Use the folder you unzipped Vellum into if it is not the one above.</p>
+
+    <h3>Claude Desktop</h3>
+    <p>Add this to <code>%APPDATA%\Claude\claude_desktop_config.json</code>, with your own
+      user name and folder, then restart Claude Desktop:</p>
+<pre class="code">{
+  "mcpServers": {
+    "vellum": {
+      "command": "C:\\Users\\&lt;you&gt;\\AppData\\Local\\Programs\\Vellum\\vellum-mcp.exe",
+      "args": []
+    }
+  }
+}</pre>
+
+    <h3>Other MCP clients</h3>
+    <p>Any client that runs a stdio MCP server works: point it at <code>vellum-mcp.exe</code>
+      with no arguments.</p>
+    <table>
+      <tr><th>Command</th><th>Behaviour</th></tr>
+      <tr><td><code>vellum-mcp</code></td><td>Draw in the open Vellum window; if none is open,
+        work in the background and move into a window as soon as one opens.</td></tr>
+      <tr><td><code>vellum-mcp --gui</code></td><td>Always draw in the window.</td></tr>
+      <tr><td><code>vellum-mcp --headless</code></td><td>Never touch a window: draw in memory,
+        save and export files.</td></tr>
+    </table>
+
+    <h3>What to ask for</h3>
+    <p>Describe the figure as you would to a colleague, and say where it goes:</p>
+    <div class="callout"><p><i>“Draw a strip footing on 2 m of sand over soft clay with the
+      water table at 1.5 m, at 1:50, and copy it for Word.”</i></p></div>
+    <div class="callout"><p><i>“Summarise these lecture slides as a design flow chart on one A4
+      portrait page, with an illustration of the wall, and save it as a PDF.”</i></p></div>
+    <p>The assistant renders the page after drawing to check its own work. You can keep
+      editing the result by hand, or ask for changes.</p>
+
+    <h2 id="trouble">Troubleshooting</h2>
+    <ul>
+      <li><b>Windows blocks the program:</b> right-click the zip, choose Properties, tick
+        <b>Unblock</b>, then unzip again; or use More info &gt; Run anyway.</li>
+      <li><b>The assistant draws but the window does not change:</b> the MCP server talks to
+        the window on <code>127.0.0.1:7676</code>. Open Vellum before asking, and make sure no
+        other program uses that port.</li>
+      <li><b>The figure looks blurry in Word:</b> paste with Ctrl+V after Ctrl+C in Vellum
+        (not a screenshot), so Word receives the vector EMF.</li>
+    </ul>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Vellum · a diagram editor for publication figures</span>
+    <span>Word and PowerPoint are trademarks of Microsoft Corporation. Vellum is not affiliated with Microsoft.</span>
+  </div>
+</footer>
+</body>
+</html>
