@@ -267,3 +267,6 @@ figure.wide { margin-bottom: 18px; }
 .theme-toggle .to-light { display: none; }
 :root[data-theme="dark"] .theme-toggle .to-dark { display: none; }
 :root[data-theme="dark"] .theme-toggle .to-light { display: block; }
+
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: -4px 0 22px; }
+.badges img { height: 20px; width: auto; }
