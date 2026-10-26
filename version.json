@@ -1,6 +1,5 @@
 {
-  "version": "0.2.1",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.1/Vellum-Setup.exe",
-  "mac": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.1/vellum-macos.zip",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.2.1"
+  "version": "0.2.2",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.2/Vellum-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.2.2"
 }
