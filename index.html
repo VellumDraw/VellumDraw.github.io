@@ -34,7 +34,7 @@
 <main>
 <div class="hero">
   <div class="wrap">
-    <p class="eyebrow">Diagram editor · Windows · v0.2.1 · macOS coming soon</p>
+    <p class="eyebrow">Diagram editor · Windows · macOS beta · v0.2.1</p>
     <h1>Figures for the paper, drawn by you <em>or your agent.</em></h1>
     <p class="lede">Vellum draws the figures a research lab makes every day: flow charts, soil
       profiles, footings, test set-ups and process circuits. Paste them into Word as sharp
@@ -148,8 +148,10 @@
         <li><b>Edit by hand or by asking.</b> The drawing is ordinary Vellum shapes: move them,
           restyle them, or ask for changes.</li>
       </ol>
-<pre class="code"><span class="c"># Claude Code</span>
-claude mcp add vellum -- "%LOCALAPPDATA%\Programs\Vellum\vellum-mcp.exe"</pre>
+<pre class="code"><span class="c"># Claude Code on Windows</span>
+claude mcp add vellum -- "%LOCALAPPDATA%\Programs\Vellum\vellum-mcp.exe"
+<span class="c"># on a Mac</span>
+claude mcp add vellum -- /Applications/Vellum.app/Contents/MacOS/vellum-mcp</pre>
       <p class="prompt">“Draw a strip footing on 2 m of sand over soft clay with the water table
         at 1.5 m, at 1:50, and copy it for Word.”</p>
       <p class="more"><a href="manual.html#mcp">MCP setup for every client →</a></p>
@@ -183,7 +185,8 @@ claude mcp add vellum -- "%LOCALAPPDATA%\Programs\Vellum\vellum-mcp.exe"</pre>
 <section id="word" class="alt">
   <div class="wrap">
     <h2>From the drawing to the document.</h2>
-    <p class="sub">Three ways to get a figure out, all keeping it vector.</p>
+    <p class="sub">Three ways to get a figure out, all keeping it vector. On the Mac, use
+      <kbd>⌘</kbd> for <kbd>Ctrl</kbd>; copying puts a vector PDF on the pasteboard.</p>
     <div class="word">
       <div><h3><kbd>Ctrl</kbd> + <kbd>C</kbd></h3><p>Copy the selection or the whole drawing as a
         vector EMF and paste it into Word or PowerPoint at its true size.</p></div>
@@ -204,13 +207,15 @@ claude mcp add vellum -- "%LOCALAPPDATA%\Programs\Vellum\vellum-mcp.exe"</pre>
         <a href="https://github.com/VellumDraw/VellumDraw.github.io/releases"><img src="https://img.shields.io/github/downloads/VellumDraw/VellumDraw.github.io/total?style=flat&amp;label=downloads&amp;color=c2410c&amp;labelColor=2a2d33" alt="Total downloads" height="20"></a>
         <a href="https://github.com/VellumDraw/VellumDraw.github.io/releases/latest"><img src="https://img.shields.io/github/v/release/VellumDraw/VellumDraw.github.io?style=flat&amp;label=release&amp;color=2a2d33&amp;labelColor=2a2d33" alt="Latest release" height="20"></a>
       </p>
-      <p class="sub">Run the installer and Vellum is in your Start menu. No administrator rights,
-        nothing to sign up for. Free for personal, academic and commercial work under the
+      <p class="sub">On Windows, run the installer and Vellum is in your Start menu; on a Mac, move
+        Vellum.app to Applications. No administrator rights, nothing to sign up for. Free for personal, academic and commercial work under the
         <a href="LICENSE.txt">freeware licence</a>; the drawings you make are yours.</p>
       <p class="fine">Vellum checks this site once a day and offers new versions itself: one click
         downloads and installs them. Turn it off under Help if you prefer.</p>
       <p class="fine">Windows may show a SmartScreen warning the first time because the program is
         not code-signed: choose <b>More info</b>, then <b>Run anyway</b>.</p>
+      <p class="fine">The Mac app is not notarized yet: the first time, right-click Vellum.app and
+        choose <b>Open</b>, or allow it under System Settings &gt; Privacy &amp; Security.</p>
     </div>
     <div class="dl-cards">
     <div class="dl-card">
@@ -229,10 +234,18 @@ claude mcp add vellum -- "%LOCALAPPDATA%\Programs\Vellum\vellum-mcp.exe"</pre>
       <p class="fine more">Prefer no installer? <a href="https://github.com/VellumDraw/VellumDraw.github.io/releases/latest/download/vellum-windows-x64.zip">Portable .zip</a>: unzip and run (no automatic updates).</p>
     </div>
     <div class="dl-card">
-      <h3>macOS <span class="tag">coming soon</span></h3>
-      <p class="meta">Apple silicon and Intel · macOS 11 or later</p>
-      <p class="fine">One Vellum.app for both kinds of Mac, with the MCP server inside. It will be
-        offered here when it is ready.</p>
+      <h3>macOS <span class="tag">beta</span></h3>
+      <p class="meta">Apple silicon and Intel · macOS 11 or later · app in a .zip</p>
+      <a class="btn primary" href="https://github.com/VellumDraw/VellumDraw.github.io/releases/latest/download/vellum-macos.zip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+        Download vellum-macos.zip
+      </a>
+      <ul>
+        <li>One <code>Vellum.app</code> for both kinds of Mac, with <code>vellum-mcp</code> inside</li>
+        <li>.vlm drawings open with a double-click; updates install themselves</li>
+        <li>Not yet on the Mac: metafile (EMF/WMF) pictures inside .vsdx files, and pasting
+          shapes copied in Word or PowerPoint</li>
+      </ul>
     </div>
     <p class="fine more"><a href="https://github.com/VellumDraw/VellumDraw.github.io/releases">All releases and release notes →</a></p>
     </div>

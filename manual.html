@@ -58,6 +58,19 @@
     </ol>
     <div class="callout"><p>Windows may warn that the program is from an unknown publisher,
       because it is not code-signed. Choose <b>More info</b>, then <b>Run anyway</b>.</p></div>
+    <h3>macOS (beta)</h3>
+    <ol>
+      <li>Download <code>vellum-macos.zip</code> from the <a href="./#download">download section</a> and
+        unzip it.</li>
+      <li>Move <code>Vellum.app</code> to Applications. It runs on Apple silicon and Intel Macs
+        with macOS 11 or later.</li>
+      <li>The first time, right-click Vellum.app and choose <b>Open</b> (the app is not notarized
+        yet), or allow it under System Settings &gt; Privacy &amp; Security.</li>
+    </ol>
+    <p>On the Mac, use <kbd>⌘</kbd> wherever this manual says <kbd>Ctrl</kbd>, and <kbd>⌥</kbd>
+      for <kbd>Alt</kbd>. Copying puts a vector PDF and a PNG on the pasteboard for Word,
+      PowerPoint and Keynote. Not yet on the Mac: metafile (EMF/WMF) pictures inside
+      <code>.vsdx</code> files, and pasting shapes copied in Word or PowerPoint.</p>
     <p>Drawings are saved as <code>.vlm</code> files. Vellum also opens and saves
       <code>.vsdx</code>. To remove Vellum, use Settings &gt; Apps.</p>
 
@@ -145,7 +158,8 @@
 
     <h3>Claude Code</h3>
 <pre class="code">claude mcp add vellum -- "%LOCALAPPDATA%\Programs\Vellum\vellum-mcp.exe"</pre>
-    <p>Use the folder you unzipped Vellum into if it is not the one above.</p>
+    <p>Use the folder you unzipped Vellum into if it is not the one above. On a Mac:</p>
+<pre class="code">claude mcp add vellum -- /Applications/Vellum.app/Contents/MacOS/vellum-mcp</pre>
 
     <h3>Claude Desktop</h3>
     <p>Add this to <code>%APPDATA%\Claude\claude_desktop_config.json</code>, with your own
