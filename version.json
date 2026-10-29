@@ -1,6 +1,12 @@
 {
-  "version": "0.2.3",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.3/Vellum-Setup.exe",
-  "mac": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.3/vellum-macos.zip",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.2.3"
+  "version": "0.2.4",
+  "date": "29 Oct 2026",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.4/Vellum-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.2.4",
+  "changes": [
+    "A Start screen when Vellum opens: continue the last drawing, pick a recent file, or start a new figure in a journal size or your own size and scale.",
+    "What's new: the status bar tells you when a new version is out, with what changed, and Download, Later or Skip this version.",
+    "Report a bug: circle the problem on a screenshot of the window and open a GitHub issue already filled in; the screenshot goes to the clipboard to paste in.",
+    "A failed download now says so, not that the check for updates failed."
+  ]
 }
