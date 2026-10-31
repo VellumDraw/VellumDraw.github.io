@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <title>Patina Plot</title>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#20242C"/>
+  <!-- P: the stem is a copper bar, the bowl a patina donut chart with a mint slice -->
+  <rect x="15" y="12" width="9" height="42" rx="4.5" fill="#E08A52"/>
+  <path d="M28 12 A12.5 12.5 0 0 1 28 37" fill="none" stroke="#3FA58C" stroke-width="9"/>
+  <path d="M28 12 A12.5 12.5 0 0 1 40.5 24.5" fill="none" stroke="#7FDCC2" stroke-width="9"/>
+</svg>
