@@ -1,11 +1,12 @@
 {
-  "version": "0.2.7",
-  "date": "9 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.7/Vellum-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.2.7",
+  "version": "0.2.8",
+  "date": "10 Nov 2026",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.8/Vellum-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.2.8",
   "changes": [
-    "New: Rename a page from its tab — right-click it and choose Rename page, or press F2 with the pointer on the tabs.",
-    "New: A clearer question before unsaved work is lost — it names the drawing and its last save; Enter saves, Esc cancels.",
-    "Fix: Themed drawings — shapes pasted from other diagram programs and themed .vsdx files keep their colours and arrowheads."
+    "New: Crop a picture — select it and choose Crop; drag the frame or type the trim. The original is kept, so you can widen or reset it.",
+    "New: More picture formats — Insert > Picture reads TIFF, BMP, GIF, WebP and WMF as well as EMF, PNG and JPEG.",
+    "MCP: picture_crop crops a picture; picture_insert takes the new formats.",
+    "Fix: The rename and delete buttons of text styles line up in Document fonts."
   ]
 }
