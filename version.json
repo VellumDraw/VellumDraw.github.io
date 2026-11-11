@@ -1,11 +1,12 @@
 {
-  "version": "0.2.9",
-  "date": "10 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.9/Vellum-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.2.9",
+  "version": "0.2.10",
+  "date": "11 Nov 2026",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.10/Vellum-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.2.10",
   "changes": [
-    "New: Crop right on the picture — Crop puts crop handles on the picture, as in Word; drag a handle to trim, drag the picture to move it under the frame.",
-    "Fix: See-through fills in Word — a gradient fading to transparent no longer turns white over what lies under it.",
-    "New: Smaller figures for Word — Copy for Word and EMF export are about half the size for drawings with patterns."
+    "New: Connectors meet lines — drop a connector's end on a line and it joins it there in a T, and stays on it when the line moves.",
+    "New: Shift while you draw — a new line, polyline or connector keeps level, plumb or 45° as you drag.",
+    "New: Frames round a diagram — a connector glues to a frame only near its edge, so ends dropped inside stay where you put them.",
+    "Fix: Report a bug — sending a report opens the new-issue page again, not the Documents folder."
   ]
 }
