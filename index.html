@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vellum: diagrams for publication figures</title>
-<meta name="description" content="Vellum is a light, fast diagram editor for publication figures. Draw flow charts and geotechnical sections, paste them into Word as vector EMF, and let an AI assistant draw through MCP.">
+<title>Vellum Draw: diagrams for engineering and science</title>
+<meta name="description" content="Vellum Draw is a light, fast diagram editor for engineering and science. Draw flow charts and geotechnical sections, paste them into Word as vector EMF, and ask the built-in Assistant to draw for you.">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +16,11 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/icon-256.png" alt="">Vellum</a>
+    <a class="brand" href="./"><img src="assets/icon-256.png" alt="">Vellum Draw</a>
     <nav>
       <a href="#features">Features</a>
-      <a href="#agents">AI drawing</a>
+      <a href="#assistant">Assistant</a>
+      <a href="#agents">MCP</a>
       <a href="#gallery">Gallery</a>
       <a href="manual.html">Manual</a>
       <button class="theme-toggle" type="button" aria-label="Switch theme">
@@ -34,12 +35,12 @@
 <main>
 <div class="hero">
   <div class="wrap">
-    <p class="eyebrow">Diagram editor · Windows v0.2.10 · macOS beta v0.2.5</p>
+    <p class="eyebrow">Diagram editor · Windows v0.3.0 · macOS beta v0.2.5</p>
     <h1>Figures for the paper, drawn by you <em>or your agent.</em></h1>
-    <p class="lede">Vellum draws the figures a research lab makes every day: flow charts, soil
-      profiles, footings, test set-ups and process circuits. Paste them into Word as sharp
-      vector pictures at their true size, or let an AI assistant build them through the
-      Model Context Protocol while you watch.</p>
+    <p class="lede">Vellum Draw draws the figures engineers and scientists make every day: flow
+      charts, soil profiles, footings, test set-ups and process circuits. Paste them into Word as
+      sharp vector pictures at their true size, or ask the Assistant beside the drawing and watch
+      it build them.</p>
     <div class="cta">
       <a class="btn primary" href="#download">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
@@ -48,7 +49,7 @@
       <a class="btn" href="manual.html">Read the manual</a>
       <span class="note">Free for any use, including commercial · updates itself</span>
     </div>
-    <div class="shot"><img src="assets/screenshot.jpg" width="1800" height="1065" alt="The Vellum window with a design flow chart for an MSE wall open on an A4 page, the Shapes pane on the left and the Properties pane on the right"></div>
+    <div class="shot"><img src="assets/screenshot.jpg" width="1800" height="1065" alt="The Vellum Draw window with a design flow chart for an MSE wall open on an A4 page, the Shapes pane on the left and the Properties pane on the right"></div>
   </div>
 </div>
 
@@ -73,9 +74,9 @@
           ready-made formulas by subject (algebra, calculus, statistics, mechanics, soils),
           the LaTeX source and a live preview. Equations sit inside a label or a sentence in
           Cambria Math. With <b>Editable in Office</b> on they paste into Word and PowerPoint as
-          Office equations, and equations copied from Word paste back as Vellum equations.</p>
+          Office equations, and equations copied from Word paste back as Vellum Draw equations.</p>
       </div>
-      <figure class="frame"><img src="assets/feature-equation.jpg" width="1600" height="846" loading="lazy" alt="The Equation dialog in Vellum showing symbol palettes, a Soils tab of ready-made formulas and a live preview of the unit-weight equation"></figure>
+      <figure class="frame"><img src="assets/feature-equation.jpg" width="1600" height="846" loading="lazy" alt="The Equation dialog in Vellum Draw showing symbol palettes, a Soils tab of ready-made formulas and a live preview of the unit-weight equation"></figure>
     </div>
 
     <div class="feature flip">
@@ -87,7 +88,7 @@
           surface, footings, piles, loads, supports and anchors come from the engineering
           stencil, and every hatch is real geometry, so it survives EMF, PDF and .vsdx.</p>
       </div>
-      <figure class="frame"><img src="assets/feature-geotech.jpg" width="1600" height="964" loading="lazy" alt="A footing on layered soil drawn at 1:50 in Vellum, with rulers in metres, sand, clay and rock hatches, a water table symbol and dimensions"></figure>
+      <figure class="frame"><img src="assets/feature-geotech.jpg" width="1600" height="964" loading="lazy" alt="A footing on layered soil drawn at 1:50 in Vellum Draw, with rulers in metres, sand, clay and rock hatches, a water table symbol and dimensions"></figure>
     </div>
 
     <div class="grid">
@@ -132,20 +133,55 @@
   </div>
 </section>
 
+<section id="assistant">
+  <div class="wrap">
+    <p class="eyebrow">Assistant · new in 0.3.0</p>
+    <h2>Ask for the figure. Watch it drawn.</h2>
+    <p class="sub">A chat pane on the right edge of the window (Ctrl+L). It answers through Claude
+      Code or Codex if you are signed in on your computer, or through your own API key for
+      Anthropic, OpenAI, Google Gemini, OpenRouter or a model you run yourself with Ollama or
+      LM Studio. It draws on the page while you watch, looks at the result and fixes what is off,
+      and every answer is one Undo.</p>
+
+    <div class="feature">
+      <div class="feature-text">
+        <p class="eyebrow">Paste a picture</p>
+        <h3>Gradation curves in, USCS out.</h3>
+        <p>Paste the gradation curves of three sands, ask for their USCS classification as a flow
+          chart, and pick the model and how hard it thinks. A picture of the page goes with every
+          message, so the Assistant sees what you see.</p>
+      </div>
+      <figure class="frame"><img src="assets/assistant-ask.jpg" width="1800" height="1125" loading="lazy" alt="Vellum Draw with the Assistant pane open: a pasted gradation-curve chart and a request to classify three sands by USCS as a flow chart, with the flow chart being drawn on the page"></figure>
+    </div>
+
+    <div class="feature flip">
+      <div class="feature-text">
+        <p class="eyebrow">A minute later</p>
+        <h3>Every check on the page, and the reasons in the chat.</h3>
+        <p>Fines through No. 200, sand or gravel, Cu and Cc: each check is a step in the flow chart,
+          and all three sands come out SP, poorly graded sand. The reply says which numbers it read
+          off the curves and which it estimated. Ordinary shapes you can move and restyle, or
+          take back in one step.</p>
+      </div>
+      <figure class="frame"><img src="assets/assistant-done.jpg" width="1800" height="1125" loading="lazy" alt="The finished USCS classification flow chart for KMUTT, Hostun and Ottawa sands, all SP, with the Assistant's reply explaining each check and an Undo link"></figure>
+    </div>
+  </div>
+</section>
+
 <section id="agents" class="alt">
   <div class="wrap split">
     <div>
       <p class="eyebrow">Model Context Protocol</p>
       <h2>Describe the figure. The agent draws it.</h2>
-      <p class="sub">vellum-mcp exposes every command as a tool, so an assistant such as
-        Claude can do anything the menus can. It renders the page to check its own work, and
-        you watch it happen in the Vellum window.</p>
+      <p class="sub">Prefer your own agent? vellum-mcp exposes every command as a tool, so an
+        assistant such as Claude can do anything the menus can. It renders the page to check its
+        own work, and you watch it happen in the Vellum Draw window.</p>
       <ol class="steps">
         <li><b>Register the server once.</b> One line in Claude Code, or a few lines of JSON in
           Claude Desktop.</li>
         <li><b>Ask in plain words.</b> Paste your notes, slides or a sketch and say what the
           figure should show.</li>
-        <li><b>Edit by hand or by asking.</b> The drawing is ordinary Vellum shapes: move them,
+        <li><b>Edit by hand or by asking.</b> The drawing is ordinary Vellum Draw shapes: move them,
           restyle them, or ask for changes.</li>
       </ol>
 <pre class="code"><span class="c"># Claude Code on Windows</span>
@@ -157,7 +193,7 @@ claude mcp add vellum -- /Applications/Vellum.app/Contents/MacOS/vellum-mcp</pre
       <p class="more"><a href="manual.html#mcp">MCP setup for every client →</a></p>
     </div>
     <figure class="sheet">
-      <img src="assets/mse-wall-flowchart.png" width="1323" height="1871" loading="lazy" alt="An A4 design flow chart for a geogrid-reinforced MSE wall with two illustrations, drawn by an AI assistant through Vellum's MCP server">
+      <img src="assets/mse-wall-flowchart.png" width="1323" height="1871" loading="lazy" alt="An A4 design flow chart for a geogrid-reinforced MSE wall with two illustrations, drawn by an AI assistant through Vellum Draw's MCP server">
       <figcaption>Drawn entirely through MCP: an A4 design flow chart for a geogrid-reinforced
         MSE wall, summarised from lecture slides, with its two illustrations.</figcaption>
     </figure>
@@ -166,8 +202,8 @@ claude mcp add vellum -- /Applications/Vellum.app/Contents/MacOS/vellum-mcp</pre
 
 <section id="gallery">
   <div class="wrap">
-    <h2>Made in Vellum.</h2>
-    <p class="sub">Every figure on this page was drawn in Vellum and exported straight from it.</p>
+    <h2>Made in Vellum Draw.</h2>
+    <p class="sub">Every figure on this page was drawn in Vellum Draw and exported straight from it.</p>
     <figure class="sheet wide"><img src="assets/triaxial-circuit.png" width="2400" height="1600" loading="lazy" alt="A triaxial test pressure circuit: air, de-aired water and vacuum lines through valves, regulators, gauges and burettes to a triaxial cell in a load frame, with a colour legend">
       <figcaption>A triaxial pressure circuit with its load frame, drawn through MCP: process
         symbols that glue at their ports, colour-coded lines that hop where they cross, a
@@ -202,18 +238,20 @@ claude mcp add vellum -- /Applications/Vellum.app/Contents/MacOS/vellum-mcp</pre
   <div class="wrap dl">
     <div>
       <p class="eyebrow">Download</p>
-      <h2>Get Vellum.</h2>
+      <h2>Get Vellum Draw.</h2>
       <p class="badges">
         <a href="https://github.com/VellumDraw/VellumDraw.github.io/releases"><img src="https://img.shields.io/github/downloads/VellumDraw/VellumDraw.github.io/total?style=flat&amp;label=downloads&amp;color=c2410c&amp;labelColor=2a2d33" alt="Total downloads" height="20"></a>
         <a href="https://github.com/VellumDraw/VellumDraw.github.io/releases/latest"><img src="https://img.shields.io/github/v/release/VellumDraw/VellumDraw.github.io?style=flat&amp;label=release&amp;color=2a2d33&amp;labelColor=2a2d33" alt="Latest release" height="20"></a>
       </p>
-      <p class="sub">On Windows, run the installer and Vellum is in your Start menu; on a Mac, move
+      <p class="sub">On Windows, run the installer and Vellum Draw is in your Start menu; on a Mac, move
         Vellum.app to Applications. No administrator rights, nothing to sign up for. Free for personal, academic and commercial work under the
         <a href="LICENSE.txt">freeware licence</a>; the drawings you make are yours.</p>
-      <p class="fine">Vellum checks this site once a day and offers new versions itself: one click
-        downloads and installs them. Turn it off under Help if you prefer.</p>
+      <p class="fine">Vellum Draw checks this site each time it starts and offers new versions
+        itself: one click downloads and installs them. Turn it off under Help if you prefer.</p>
       <p class="fine">Windows may show a SmartScreen warning the first time because the program is
         not code-signed: choose <b>More info</b>, then <b>Run anyway</b>.</p>
+      <p class="fine donate">Vellum Draw is free. If it helps your work, you can
+        <a href="https://ko-fi.com/kositabn">support it on Ko-fi ♥</a>.</p>
       <p class="fine">The Mac app is not notarized yet: the first time, right-click Vellum.app and
         choose <b>Open</b>, or allow it under System Settings &gt; Privacy &amp; Security.</p>
     </div>
@@ -221,9 +259,9 @@ claude mcp add vellum -- /Applications/Vellum.app/Contents/MacOS/vellum-mcp</pre
     <div class="dl-card">
       <h3>Windows</h3>
       <p class="meta">x64 · Windows 10 and 11 · installer</p>
-      <a class="btn primary" href="https://github.com/VellumDraw/VellumDraw.github.io/releases/latest/download/Vellum-Setup.exe">
+      <a class="btn primary" href="https://github.com/VellumDraw/VellumDraw.github.io/releases/latest/download/VellumDraw-Setup.exe">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
-        Download Vellum-Setup.exe
+        Download VellumDraw-Setup.exe
       </a>
       <ul>
         <li>The editor and <code>vellum-mcp.exe</code>, the MCP server for AI assistants</li>
@@ -235,7 +273,7 @@ claude mcp add vellum -- /Applications/Vellum.app/Contents/MacOS/vellum-mcp</pre
     </div>
     <div class="dl-card">
       <h3>macOS <span class="tag">beta</span></h3>
-      <p class="meta">Apple silicon and Intel · macOS 11 or later · app in a .zip · version 0.2.5 (0.2.10 follows)</p>
+      <p class="meta">Apple silicon and Intel · macOS 11 or later · app in a .zip · version 0.2.5 (0.3.0 follows)</p>
       <a class="btn primary" href="https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.5/vellum-macos.zip">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
         Download vellum-macos.zip
@@ -263,8 +301,8 @@ claude mcp add vellum -- /Applications/Vellum.app/Contents/MacOS/vellum-mcp</pre
     </a>
   </div>
   <div class="wrap">
-    <span>Vellum · a diagram editor for publication figures · <a href="LICENSE.txt">Freeware licence</a></span>
-    <span>Word and PowerPoint are trademarks of Microsoft Corporation. Vellum is not affiliated with Microsoft.</span>
+    <span>Vellum Draw · a diagram editor for engineering and science · <a href="LICENSE.txt">Freeware licence</a> · <a href="https://ko-fi.com/kositabn">Donate</a></span>
+    <span>Word and PowerPoint are trademarks of Microsoft Corporation; Claude of Anthropic; ChatGPT and Codex of OpenAI; Gemini of Google. Vellum Draw is not affiliated with any of them.</span>
   </div>
 </footer>
 </body>

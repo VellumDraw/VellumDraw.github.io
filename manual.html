@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vellum manual</title>
-<meta name="description" content="Install Vellum, draw your first figure, paste it into Word, and connect an AI assistant through MCP.">
+<title>Vellum Draw manual</title>
+<meta name="description" content="Install Vellum Draw, draw your first figure, paste it into Word, and connect an AI assistant through MCP.">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/icon-256.png" alt="">Vellum</a>
+    <a class="brand" href="./"><img src="assets/icon-256.png" alt="">Vellum Draw</a>
     <nav>
       <a href="./#features">Features</a>
       <a href="./#agents">AI drawing</a>
@@ -38,23 +38,24 @@
     <a href="#text">Text and equations</a>
     <a href="#word">Word and PowerPoint</a>
     <a href="#keys">Keys</a>
+    <a href="#assistant">Assistant</a>
     <a href="#mcp">AI drawing (MCP)</a>
     <a href="#trouble">Troubleshooting</a>
   </nav>
 
   <article>
     <p class="eyebrow">Manual</p>
-    <h1>Using Vellum</h1>
-    <p>Vellum is a diagram editor for publication figures. This page covers what you need to
+    <h1>Using Vellum Draw</h1>
+    <p>Vellum Draw is a diagram editor for engineering and science. This page covers what you need to
       start: installing, drawing, getting figures into Word, and letting an AI assistant draw
       for you.</p>
 
     <h2 id="install">Install</h2>
     <ol>
-      <li>Download <code>Vellum-Setup.exe</code> from the <a href="./#download">download section</a>.</li>
-      <li>Run it and accept the licence. Vellum installs for your user account only, to
+      <li>Download <code>VellumDraw-Setup.exe</code> from the <a href="./#download">download section</a>.</li>
+      <li>Run it and accept the licence. Vellum Draw installs for your user account only, to
         <code>%LOCALAPPDATA%\Programs\Vellum</code>, without administrator rights.</li>
-      <li>Start Vellum from the Start menu, or double-click any <code>.vlm</code> drawing.</li>
+      <li>Start Vellum Draw from the Start menu, or double-click any <code>.vlm</code> drawing.</li>
     </ol>
     <div class="callout"><p>Windows may warn that the program is from an unknown publisher,
       because it is not code-signed. Choose <b>More info</b>, then <b>Run anyway</b>.</p></div>
@@ -71,13 +72,13 @@
       for <kbd>Alt</kbd>. Copying puts a vector PDF and a PNG on the pasteboard for Word,
       PowerPoint and Keynote. Not yet on the Mac: metafile (EMF/WMF) pictures inside
       <code>.vsdx</code> files, and pasting shapes copied in Word or PowerPoint.</p>
-    <p>Drawings are saved as <code>.vlm</code> files. Vellum also opens and saves
-      <code>.vsdx</code>. To remove Vellum, use Settings &gt; Apps.</p>
+    <p>Drawings are saved as <code>.vlm</code> files. Vellum Draw also opens and saves
+      <code>.vsdx</code>. To remove Vellum Draw, use Settings &gt; Apps.</p>
 
     <h3>Updates</h3>
-    <p>Once a day Vellum checks this website for a new version. When there is one, a bar
+    <p>Each time it starts, Vellum Draw checks this website for a new version. When there is one, a bar
       appears under the ribbon: <b>Update</b> downloads it, and <b>Close and update</b> asks you
-      to save your drawing, installs the new version and opens Vellum again. Help &gt; Check
+      to save your drawing, installs the new version and opens Vellum Draw again. Help &gt; Check
       for updates checks straight away; untick <b>Check for updates automatically</b> there to
       stop the daily check.</p>
     <p>The portable <code>.zip</code> (no installer) does not update itself: download a new one
@@ -128,7 +129,7 @@
         shapes and equations instead.</li>
       <li><b>Copy for Word</b> (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>) always copies one
         vector picture.</li>
-      <li>Charts copied from Origin, Excel or PowerPoint paste into Vellum and stay vector;
+      <li>Charts copied from Origin, Excel or PowerPoint paste into Vellum Draw and stay vector;
         right-click &gt; Convert to shapes makes them editable.</li>
     </ul>
 
@@ -150,15 +151,35 @@
       <tr><td>Drag from a ruler</td><td>New guide</td></tr>
     </table>
 
+    <h2 id="assistant">Assistant</h2>
+    <p>Open the Assistant with the violet tab on the right edge, or Ctrl+L. Type what you want
+      drawn or changed and press Enter; paste a picture with Ctrl+V or attach one with +. The
+      Assistant works on the page named under the chat ("Works on and looks at"), and a picture
+      of that page goes with every message. Its steps show as they run, and when it is done the
+      line under the answer gives the model, the time and an <b>Undo</b> that takes back the
+      whole answer (Ctrl+Z does the same).</p>
+    <p><b>Who answers</b> (Change, at the top of the pane):</p>
+    <ul>
+      <li><b>Claude Code</b> or <b>Codex</b>: uses your Claude or ChatGPT plan. Install it and sign
+        in once (run <code>claude</code>, or <code>codex login</code>, or the ChatGPT app); Vellum
+        Draw finds it and never sees your password.</li>
+      <li><b>An API key</b> for Anthropic, OpenAI or Google Gemini, or an OpenAI-compatible server
+        (OpenRouter, or Ollama and LM Studio on your own computer). Add the key, press
+        <b>Test</b> to fetch the models, pick one and <b>Save key</b>. Keys stay in Windows
+        Credential Manager and go only to their provider. You pay the provider per use.</li>
+    </ul>
+    <p>The button under the text box picks the model and how hard it thinks (effort). Only models
+      that can call tools can draw; others answer questions about the drawing.</p>
+
     <h2 id="mcp">AI drawing (MCP)</h2>
     <p><code>vellum-mcp.exe</code> is a <a href="https://modelcontextprotocol.io">Model Context
-      Protocol</a> server. Every Vellum command is a tool, so an assistant can do anything the
-      menus can. With the Vellum window open, the assistant draws in it and you watch;
+      Protocol</a> server. Every Vellum Draw command is a tool, so an assistant can do anything the
+      menus can. With the Vellum Draw window open, the assistant draws in it and you watch;
       without a window it works in the background and saves or exports files.</p>
 
     <h3>Claude Code</h3>
 <pre class="code">claude mcp add vellum -- "%LOCALAPPDATA%\Programs\Vellum\vellum-mcp.exe"</pre>
-    <p>Use the folder you unzipped Vellum into if it is not the one above. On a Mac:</p>
+    <p>Use the folder you unzipped Vellum Draw into if it is not the one above. On a Mac:</p>
 <pre class="code">claude mcp add vellum -- /Applications/Vellum.app/Contents/MacOS/vellum-mcp</pre>
 
     <h3>Claude Desktop</h3>
@@ -178,7 +199,7 @@
       with no arguments.</p>
     <table>
       <tr><th>Command</th><th>Behaviour</th></tr>
-      <tr><td><code>vellum-mcp</code></td><td>Draw in the open Vellum window; if none is open,
+      <tr><td><code>vellum-mcp</code></td><td>Draw in the open Vellum Draw window; if none is open,
         work in the background and move into a window as soon as one opens.</td></tr>
       <tr><td><code>vellum-mcp --gui</code></td><td>Always draw in the window.</td></tr>
       <tr><td><code>vellum-mcp --headless</code></td><td>Never touch a window: draw in memory,
@@ -199,9 +220,9 @@
       <li><b>Windows blocks the program:</b> right-click the zip, choose Properties, tick
         <b>Unblock</b>, then unzip again; or use More info &gt; Run anyway.</li>
       <li><b>The assistant draws but the window does not change:</b> the MCP server talks to
-        the window on <code>127.0.0.1:7676</code>. Open Vellum before asking, and make sure no
+        the window on <code>127.0.0.1:7676</code>. Open Vellum Draw before asking, and make sure no
         other program uses that port.</li>
-      <li><b>The figure looks blurry in Word:</b> paste with Ctrl+V after Ctrl+C in Vellum
+      <li><b>The figure looks blurry in Word:</b> paste with Ctrl+V after Ctrl+C in Vellum Draw
         (not a screenshot), so Word receives the vector EMF.</li>
     </ul>
   </article>
@@ -209,8 +230,8 @@
 
 <footer>
   <div class="wrap">
-    <span>Vellum · a diagram editor for publication figures · <a href="LICENSE.txt">Freeware licence</a></span>
-    <span>Word and PowerPoint are trademarks of Microsoft Corporation. Vellum is not affiliated with Microsoft.</span>
+    <span>Vellum Draw · a diagram editor for publication figures · <a href="LICENSE.txt">Freeware licence</a></span>
+    <span>Word and PowerPoint are trademarks of Microsoft Corporation. Vellum Draw is not affiliated with Microsoft.</span>
   </div>
 </footer>
 </body>
