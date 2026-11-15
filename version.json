@@ -1,12 +1,13 @@
 {
-  "version": "0.2.10",
-  "date": "11 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.2.10/Vellum-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.2.10",
+  "version": "0.3.0",
+  "date": "15 Nov 2026",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.0/VellumDraw-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.0",
   "changes": [
-    "New: Connectors meet lines — drop a connector's end on a line and it joins it there in a T, and stays on it when the line moves.",
-    "New: Shift while you draw — a new line, polyline or connector keeps level, plumb or 45° as you drag.",
-    "New: Frames round a diagram — a connector glues to a frame only near its edge, so ends dropped inside stay where you put them.",
-    "Fix: Report a bug — sending a report opens the new-issue page again, not the Documents folder."
+    "New: Vellum Draw — Vellum has a new name, a new icon and a new startup card. Your drawings, settings and MCP setup carry over.",
+    "New: Assistant — a chat pane on the right edge (Ctrl+L): Claude Code, Codex, or your own API key (Anthropic, OpenAI, Gemini, OpenRouter, Ollama). Paste a picture and watch it draw; every answer is one Undo.",
+    "New: Light or dark from the status bar — a sun/moon button at its right end.",
+    "New: Donate — a button beside the tabs (Ko-fi); close it with its x, Help keeps the link.",
+    "Fix: The status bar names only the file, so the page tabs keep their room."
   ]
 }
