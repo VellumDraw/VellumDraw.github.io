@@ -1,12 +1,12 @@
 {
-  "version": "0.3.3",
+  "version": "0.3.4",
   "date": "16 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.3/VellumDraw-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.3",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.4/VellumDraw-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.4",
   "changes": [
-    "Fix: The Assistant finds Claude Code that came with the Claude app — whatever folder it uses, or from its open Code session.",
-    "Fix: More places searched — WinGet, Scoop, Bun, pnpm, Volta, nvm, and the Claude Code in the VS Code, Cursor and Windsurf extensions.",
-    "Fix: Check again — finds a Claude Code installed after Vellum Draw started, says it looked, and when nothing is found says where it looked.",
-    "New: Program may be the folder the program is in."
+    "Fix: Sign in from the chat — when Claude Code is not signed in, a Sign in button opens its sign-in page instead of \"Please run /login\".",
+    "New: Install Claude Code — when it is not found, runs Anthropic's installer and then its sign-in. Copy details copies where Vellum Draw looked, for a report.",
+    "New: Text size — Aa in the Assistant's header makes its text larger or smaller, and is remembered.",
+    "Fix: Buttons line up at any text size, and Sign in and Done respond to hover, press and the keyboard."
   ]
 }
