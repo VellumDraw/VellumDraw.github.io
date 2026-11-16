@@ -1,11 +1,12 @@
 {
-  "version": "0.3.1",
-  "date": "15 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.1/VellumDraw-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.1",
+  "version": "0.3.2",
+  "date": "16 Nov 2026",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.2/VellumDraw-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.2",
   "changes": [
-    "New: Vellum Draw on the Mac — the Assistant comes to macOS, with API keys kept in the Keychain.",
-    "Fix: The Assistant, the licence and the README name where your keys are kept: the Windows Credential Manager or the macOS Keychain."
-  ],
-  "mac": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.1/vellum-macos.zip"
+    "Fix: The Assistant finds Claude Code and Codex — installed with npm, or inside the Claude and ChatGPT desktop apps, including the Microsoft Store versions.",
+    "New: Agent settings — under Change, where its program is, its model and effort, Claude Code's account folder, who is signed in, and Sign in.",
+    "Fix: Clearer buttons — Change, Back, New chat, Edit and Add key are bordered and easy to see in the dark theme.",
+    "New: Export and Copy to clipboard — on the Home ribbon, in the Clipboard group."
+  ]
 }
