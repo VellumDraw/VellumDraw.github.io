@@ -165,7 +165,12 @@
         Draw finds it, also inside the Claude and ChatGPT desktop apps, and never sees your
         password. Under the chosen one, <b>Program</b> shows where it was found (or <b>Browse</b>
         to it), with its model, effort and, for Claude Code, the <b>Account</b> folder; the lines
-        below say who is signed in, and <b>Sign in</b> opens its sign-in.</li>
+        below say who is signed in, and <b>Sign in</b> opens its sign-in. If it is not signed in when
+        you send a message, the chat shows a <b>Sign in</b> button in place of an answer. If Claude
+        Code is not found, <b>Install Claude Code</b> runs Anthropic's installer and then its
+        sign-in (the Claude app's Code tab may run Claude Code in the cloud or in its own sandbox,
+        which other programs cannot use), and <b>Copy details</b> copies where Vellum Draw looked,
+        to send with a report.</li>
       <li><b>An API key</b> for Anthropic, OpenAI or Google Gemini, or an OpenAI-compatible server
         (OpenRouter, or Ollama and LM Studio on your own computer). Add the key, press
         <b>Test</b> to fetch the models, pick one and <b>Save key</b>. Keys stay in the Windows
@@ -173,6 +178,8 @@
     </ul>
     <p>The button under the text box picks the model and how hard it thinks (effort). Only models
       that can call tools can draw; others answer questions about the drawing.</p>
+    <p><b>Aa</b>, at the top of the pane, makes the Assistant's text larger or smaller (90% to
+      200%); Vellum Draw remembers the size.</p>
 
     <h2 id="mcp">AI drawing (MCP)</h2>
     <p><code>vellum-mcp.exe</code> is a <a href="https://modelcontextprotocol.io">Model Context
