@@ -1,12 +1,12 @@
 {
-  "version": "0.3.4",
+  "version": "0.3.5",
   "date": "16 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.4/VellumDraw-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.4",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.5/VellumDraw-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.5",
   "changes": [
-    "Fix: Sign in from the chat — when Claude Code is not signed in, a Sign in button opens its sign-in page instead of \"Please run /login\".",
-    "New: Install Claude Code — when it is not found, runs Anthropic's installer and then its sign-in. Copy details copies where Vellum Draw looked, for a report.",
-    "New: Text size — Aa in the Assistant's header makes its text larger or smaller, and is remembered.",
-    "Fix: Buttons line up at any text size, and Sign in and Done respond to hover, press and the keyboard."
+    "New: Auto Size — draw past the edge of the paper and the page grows by a whole page in that direction, and shrinks back when the shapes leave. On for new drawings (Design › Auto Size).",
+    "Fix: Flip and rotate groups — a group flips and turns as one piece about its own centre and keeps its angle, instead of each part turning on its own.",
+    "New: Lines and arrows flip and turn about their middle; Ctrl+R, Ctrl+H and Ctrl+J rotate and flip.",
+    "MCP: arrange_flip and arrange_rotate; shape_update sets a group's angle; page_set auto_size."
   ]
 }
