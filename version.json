@@ -4,7 +4,8 @@
   "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.1/VellumDraw-Setup.exe",
   "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.1",
   "changes": [
-    "New: API keys on the Mac — the Assistant keeps them in the macOS Keychain, ready for the Mac build of Vellum Draw.",
-    "Fix: The Assistant, the licence and the README name where your keys are kept: the Windows Credential Manager on Windows."
-  ]
+    "New: Vellum Draw on the Mac — the Assistant comes to macOS, with API keys kept in the Keychain.",
+    "Fix: The Assistant, the licence and the README name where your keys are kept: the Windows Credential Manager or the macOS Keychain."
+  ],
+  "mac": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.1/vellum-macos.zip"
 }
