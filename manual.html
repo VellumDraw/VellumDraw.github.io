@@ -35,6 +35,8 @@
     <a href="#install">Install</a>
     <a href="#first">Your first figure</a>
     <a href="#page">Page size, flip and rotate</a>
+    <a href="#pages">Pages and folders</a>
+    <a href="#lines">Lines and arrows</a>
     <a href="#scale">Drawing at scale</a>
     <a href="#text">Text and equations</a>
     <a href="#word">Word and PowerPoint</a>
@@ -111,6 +113,23 @@
       A line or arrow flips about its middle. With several shapes selected, each one flips or
       turns in its own place. Text always stays readable.</p>
 
+    <h2 id="pages">Pages and folders</h2>
+    <p>The <b>Project</b> pane under Shapes lists the drawing's pages in folders. Make a folder
+      or a sub-folder with the folder button at its top or a right-click, drag pages and folders into the
+      order you want, give them a colour, and rename one in place with <kbd>F2</kbd> or a
+      double-click. Deleting a folder asks first and says what goes with it. The page tabs under
+      the drawing show the pages of the folder you are in.</p>
+
+    <h2 id="lines">Lines and arrows</h2>
+    <p><b>Dashes</b> (Home &gt; Line, or the Properties pane) come from a gallery. <b>New
+      dash…</b> makes one of your own: drag its dashes and gaps on the ruler, in multiples of
+      the line width, so it keeps its look at any weight. Your dashes are kept for every
+      drawing.</p>
+    <p><b>Ends and corners:</b> round, square or flat line ends, and round, bevelled or sharp
+      corners, as in Office. <b>Arrowheads:</b> sixteen kinds, from triangles and open heads to
+      half, double, disc, hollow diamond, square and crow's foot, each with its own size and
+      spread.</p>
+
     <h2 id="scale">Drawing at scale</h2>
     <p>Set a drawing scale in the Page pane (for example <b>1:50 in m</b>). The rulers,
       dimensions and Size &amp; Position then read in metres, so a 2.0 m footing is typed as
@@ -129,6 +148,10 @@
       <tr><td><code>\it{in situ}</code></td><td><i>in situ</i></td></tr>
     </table>
     <p>Thai text is set in the document's Thai font (Sarabun by default).</p>
+    <p><b>Part of a label larger or smaller:</b> select it while editing and press
+      <kbd>Ctrl</kbd>+<kbd>]</kbd> or <kbd>Ctrl</kbd>+<kbd>[</kbd>, or use A⁺ and A⁻ on the
+      text toolbar. It is kept as <code>\scalebox{1.2}{…}</code>, which also works in
+      equations.</p>
     <p><b>Equations:</b> Insert &gt; Equation (<kbd>Alt</kbd>+<kbd>=</kbd>) opens the
       equation editor, with symbol palettes, templates, ready-made formulas by subject and the
       LaTeX source. Double-click an equation to edit it again.</p>
@@ -159,10 +182,12 @@
       <tr><td>Arrows, Shift+arrows</td><td>Nudge 1 mm, 0.1 mm</td></tr>
       <tr><td>F2, double-click, or just type</td><td>Edit text (Ctrl+Enter or click outside to finish)</td></tr>
       <tr><td>Alt+=</td><td>Insert an equation</td></tr>
-      <tr><td>Ctrl+Z, Ctrl+Y</td><td>Undo, redo</td></tr>
+      <tr><td>Ctrl+Z, Ctrl+Y</td><td>Undo, redo (inside text you are editing, a word at a time)</td></tr>
+      <tr><td>Ctrl+], Ctrl+[</td><td>Selected text a size larger, smaller</td></tr>
       <tr><td>Ctrl+0, Ctrl+1, Ctrl+wheel</td><td>Fit page, actual size, zoom</td></tr>
       <tr><td>Ctrl+E</td><td>Export</td></tr>
       <tr><td>Drag from a ruler</td><td>New guide</td></tr>
+      <tr><td>F1 (on the Start screen)</td><td>Every shortcut</td></tr>
     </table>
 
     <h2 id="assistant">Assistant</h2>
@@ -246,6 +271,10 @@
       <li><b>The assistant draws but the window does not change:</b> the MCP server talks to
         the window on <code>127.0.0.1:7676</code>. Open Vellum Draw before asking, and make sure no
         other program uses that port.</li>
+      <li><b>Report a bug</b> (status bar) opens GitHub with your report filled in. A link
+        cannot carry a picture, so paste the screenshot under <b>Screenshot</b> with
+        <kbd>Ctrl</kbd>+<kbd>V</kbd>, or drag in <code>vellum-bug-….png</code> from your
+        Downloads folder.</li>
       <li><b>The figure looks blurry in Word:</b> paste with Ctrl+V after Ctrl+C in Vellum Draw
         (not a screenshot), so Word receives the vector EMF.</li>
     </ul>
