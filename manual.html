@@ -72,7 +72,8 @@
         yet), or allow it under System Settings &gt; Privacy &amp; Security.</li>
     </ol>
     <p>On the Mac, use <kbd>⌘</kbd> wherever this manual says <kbd>Ctrl</kbd>, and <kbd>⌥</kbd>
-      for <kbd>Alt</kbd>. Copying puts a vector PDF and a PNG on the pasteboard for Word,
+      for <kbd>Alt</kbd> (Alt codes and <kbd>Alt</kbd>+<kbd>X</kbd> are Windows only: on the
+      Mac, Option types its own characters). Copying puts a vector PDF and a PNG on the pasteboard for Word,
       PowerPoint and Keynote. Not yet on the Mac: metafile (EMF/WMF) pictures inside
       <code>.vsdx</code> files, and pasting shapes copied in Word or PowerPoint.</p>
     <p>Drawings are saved as <code>.vlm</code> files. Vellum Draw also opens and saves
@@ -148,9 +149,20 @@
       <tr><td><code>\it{in situ}</code></td><td><i>in situ</i></td></tr>
     </table>
     <p>Thai text is set in the document's Thai font (Sarabun by default).</p>
+    <p><b>Superscripts and subscripts while typing:</b> as in Word,
+      <kbd>Ctrl</kbd>+<kbd>=</kbd> starts a subscript and
+      <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd> a superscript; press the same keys again
+      (or <kbd>→</kbd>) to go back to the line. With characters selected, the keys format the
+      selection. From the next version, the script sits where it will on the page while you type.</p>
+    <p><b>Symbols:</b> hold <kbd>Alt</kbd> and type a code on the number pad, as in any
+      Windows program: <kbd>Alt</kbd>+<kbd>0176</kbd> (or <kbd>Alt</kbd>+<kbd>248</kbd>) gives °,
+      <kbd>Alt</kbd>+<kbd>0177</kbd> ±, <kbd>Alt</kbd>+<kbd>0215</kbd> ×. Or type a Unicode code
+      and press <kbd>Alt</kbd>+<kbd>X</kbd>, as in Word: <code>2103</code> then
+      <kbd>Alt</kbd>+<kbd>X</kbd> gives ℃. (Next version.)</p>
     <p><b>Part of a label larger or smaller:</b> select it while editing and press
-      <kbd>Ctrl</kbd>+<kbd>]</kbd> or <kbd>Ctrl</kbd>+<kbd>[</kbd>, or use A⁺ and A⁻ on the
-      text toolbar. It is kept as <code>\scalebox{1.2}{…}</code>, which also works in
+      <kbd>Ctrl</kbd>+<kbd>]</kbd> or <kbd>Ctrl</kbd>+<kbd>[</kbd>
+      (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>&gt;</kbd> or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>&lt;</kbd>
+      from the next version), or use A⁺ and A⁻ on the text toolbar. It is kept as <code>\scalebox{1.2}{…}</code>, which also works in
       equations.</p>
     <p><b>Equations:</b> Insert &gt; Equation (<kbd>Alt</kbd>+<kbd>=</kbd>) opens the
       equation editor, with symbol palettes, templates, ready-made formulas by subject and the
@@ -183,11 +195,29 @@
       <tr><td>F2, double-click, or just type</td><td>Edit text (Ctrl+Enter or click outside to finish)</td></tr>
       <tr><td>Alt+=</td><td>Insert an equation</td></tr>
       <tr><td>Ctrl+Z, Ctrl+Y</td><td>Undo, redo (inside text you are editing, a word at a time)</td></tr>
-      <tr><td>Ctrl+], Ctrl+[</td><td>Selected text a size larger, smaller</td></tr>
       <tr><td>Ctrl+0, Ctrl+1, Ctrl+wheel</td><td>Fit page, actual size, zoom</td></tr>
       <tr><td>Ctrl+E</td><td>Export</td></tr>
       <tr><td>Drag from a ruler</td><td>New guide</td></tr>
       <tr><td>F1 (on the Start screen)</td><td>Every shortcut</td></tr>
+    </table>
+    <h3>While typing in a shape</h3>
+    <p>These keys work on the text you are editing; once editing ends, keys such as Ctrl+E and
+      Ctrl+R go back to their drawing actions above.</p>
+    <table>
+      <tr><th>Key</th><th>Action</th></tr>
+      <tr><td>Ctrl+=</td><td>Subscript</td></tr>
+      <tr><td>Ctrl+Shift++</td><td>Superscript</td></tr>
+      <tr><td>Ctrl+−</td><td>Superscript over subscript</td></tr>
+      <tr><td>Ctrl+B, Ctrl+I</td><td>Bold, italic</td></tr>
+      <tr><td>Ctrl+], Ctrl+[</td><td>A size larger, smaller</td></tr>
+      <tr><td>Ctrl+Shift+&gt;, Ctrl+Shift+&lt;</td><td>A size larger, smaller (next version)</td></tr>
+      <tr><td>Ctrl+Space</td><td>Clear formatting</td></tr>
+      <tr><td>Ctrl+L, Ctrl+E, Ctrl+R</td><td>Paragraph left, centred, right (next version)</td></tr>
+      <tr><td>Alt+0176 (number pad)</td><td>Symbol by its Alt code, here ° (next version, Windows)</td></tr>
+      <tr><td>Alt+X</td><td>Unicode code before the caret to its character (next version, Windows)</td></tr>
+      <tr><td>Alt+=</td><td>Insert an equation</td></tr>
+      <tr><td>Ctrl+Z, Ctrl+Y</td><td>Undo, redo a word at a time</td></tr>
+      <tr><td>Esc, Ctrl+Enter</td><td>Cancel, finish</td></tr>
     </table>
 
     <h2 id="assistant">Assistant</h2>
