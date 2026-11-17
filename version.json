@@ -1,12 +1,17 @@
 {
-  "version": "0.3.5",
-  "date": "16 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.5/VellumDraw-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.5",
+  "version": "0.3.6",
+  "date": "17 Nov 2026",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.6/VellumDraw-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.6",
   "changes": [
-    "New: Auto Size — draw past the edge of the paper and the page grows by a whole page in that direction, and shrinks back when the shapes leave. On for new drawings (Design › Auto Size).",
-    "Fix: Flip and rotate groups — a group flips and turns as one piece about its own centre and keeps its angle, instead of each part turning on its own.",
-    "New: Lines and arrows flip and turn about their middle; Ctrl+R, Ctrl+H and Ctrl+J rotate and flip.",
-    "MCP: arrange_flip and arrange_rotate; shape_update sets a group's angle; page_set auto_size."
+    "New: Project pane — pages in folders and sub-folders under Shapes, dragged into order, coloured and renamed in place; the page tabs show the folder you are in.",
+    "New: Dashes — a gallery of patterns and dashes of your own, drawn on a ruler in line widths and kept for every drawing.",
+    "New: Line ends and corners (round, square, flat; round, bevelled, sharp) and seven more arrowheads with a spread for each end.",
+    "New: Part of a label or equation larger or smaller — select it and press Ctrl+] or Ctrl+[, or use A⁺ and A⁻.",
+    "New: Properties pane redesigned, and a new Start screen with recent drawings you can search and pin; F1 lists every shortcut.",
+    "Fix: Ctrl+Z and Ctrl+Y work inside the text you are editing, a word at a time.",
+    "Fix: Report a bug — the screenshot now reaches the report (paste it, or drag in the copy saved in Downloads).",
+    "Fix: The Assistant's chat box scrolls; the caret sits right after Thai vowels such as ำ; Thai text follows its box's font.",
+    "MCP: folders (folder_add, folder_set, folder_delete, folder_list), dashes by name or lengths, line ends and corners, arrowhead spread, \\scalebox in labels."
   ]
 }
