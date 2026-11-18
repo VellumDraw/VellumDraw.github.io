@@ -1,17 +1,14 @@
 {
-  "version": "0.3.6",
-  "date": "17 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.6/VellumDraw-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.6",
+  "version": "0.3.7",
+  "date": "18 Nov 2026",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.7/VellumDraw-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.7",
   "changes": [
-    "New: Project pane — pages in folders and sub-folders under Shapes, dragged into order, coloured and renamed in place; the page tabs show the folder you are in.",
-    "New: Dashes — a gallery of patterns and dashes of your own, drawn on a ruler in line widths and kept for every drawing.",
-    "New: Line ends and corners (round, square, flat; round, bevelled, sharp) and seven more arrowheads with a spread for each end.",
-    "New: Part of a label or equation larger or smaller — select it and press Ctrl+] or Ctrl+[, or use A⁺ and A⁻.",
-    "New: Properties pane redesigned, and a new Start screen with recent drawings you can search and pin; F1 lists every shortcut.",
-    "Fix: Ctrl+Z and Ctrl+Y work inside the text you are editing, a word at a time.",
-    "Fix: Report a bug — the screenshot now reaches the report (paste it, or drag in the copy saved in Downloads).",
-    "Fix: The Assistant's chat box scrolls; the caret sits right after Thai vowels such as ำ; Thai text follows its box's font.",
-    "MCP: folders (folder_add, folder_set, folder_delete, folder_list), dashes by name or lengths, line ends and corners, arrowhead spread, \\scalebox in labels."
+    "New: The Assistant remembers each drawing's chats — the clock lists them, pick one to carry on; New chat keeps the one you leave; deleting asks first.",
+    "New: Click a picture in the Assistant's chat to see it large.",
+    "New: Alt+number-pad codes (Alt+0176 gives °), Alt+X as in Word, Ctrl+Shift+> and <, and Ctrl+L/E/R to align while typing; F1 lists them.",
+    "New: The Assistant's Change button is now a gear, to save room.",
+    "Fix: Arrowheads pasted into PowerPoint keep their sharp tips and corners.",
+    "Fix: Subscripts and superscripts sit where the page draws them while you type, and a space at the end of a line moves the caret."
   ]
 }
