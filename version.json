@@ -1,14 +1,12 @@
 {
-  "version": "0.3.7",
-  "date": "18 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.7/VellumDraw-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.7",
+  "version": "0.3.8",
+  "date": "19 Nov 2026",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.8/VellumDraw-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.8",
   "changes": [
-    "New: The Assistant remembers each drawing's chats — the clock lists them, pick one to carry on; New chat keeps the one you leave; deleting asks first.",
-    "New: Click a picture in the Assistant's chat to see it large.",
-    "New: Alt+number-pad codes (Alt+0176 gives °), Alt+X as in Word, Ctrl+Shift+> and <, and Ctrl+L/E/R to align while typing; F1 lists them.",
-    "New: The Assistant's Change button is now a gear, to save room.",
-    "Fix: Arrowheads pasted into PowerPoint keep their sharp tips and corners.",
-    "Fix: Subscripts and superscripts sit where the page draws them while you type, and a space at the end of a line moves the caret."
+    "New: Move a right-angle connector's segments and corners by dragging their handles; a segment at an end keeps its end glued.",
+    "New: The route you set stays as the shapes move, until it would run through one of them; Reset route lays it out again.",
+    "Fix: Connectors in a drawing saved as .vsdx stay glued to their shapes when it is opened.",
+    "MCP: shape_get lists a connector's segments; shape_update takes move_segment and reset_route."
   ]
 }
