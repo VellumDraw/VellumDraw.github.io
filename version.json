@@ -1,12 +1,13 @@
 {
-  "version": "0.3.8",
+  "version": "0.3.9",
   "date": "19 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.8/VellumDraw-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.8",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.9/VellumDraw-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.9",
   "changes": [
-    "New: Move a right-angle connector's segments and corners by dragging their handles; a segment at an end keeps its end glued.",
-    "New: The route you set stays as the shapes move, until it would run through one of them; Reset route lays it out again.",
-    "Fix: Connectors in a drawing saved as .vsdx stay glued to their shapes when it is opened.",
-    "MCP: shape_get lists a connector's segments; shape_update takes move_segment and reset_route."
+    "Fix: Figures with clip art over a soil layer no longer stall PowerPoint, and Word's PDF keeps them sharp.",
+    "New: Pictures in a copied figure or an .emf get only the pixels their size needs; Options sets the resolution (300 dpi unless changed).",
+    "New: Copy as image (Home > Clipboard, or right-click) copies a plain picture; the status bar says when a copy is heavy for Office.",
+    "New: Drag a polyline's level or plumb segment sideways by its middle handle; the right angles stay.",
+    "MCP: export_clipboard takes format png; picture_dpi on EMF export and copy; move_segment works on lines."
   ]
 }
