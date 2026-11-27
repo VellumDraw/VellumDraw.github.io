@@ -1,10 +1,10 @@
 {
-  "version": "0.3.10",
-  "date": "23 Nov 2026",
-  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.10/VellumDraw-Setup.exe",
-  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.10",
+  "version": "0.3.11",
+  "date": "27 Nov 2026",
+  "installer": "https://github.com/VellumDraw/VellumDraw.github.io/releases/download/v0.3.11/VellumDraw-Setup.exe",
+  "notes": "https://github.com/VellumDraw/VellumDraw.github.io/releases/tag/v0.3.11",
   "changes": [
-    "New: Resize cursors turn with a turned or flipped shape, also when a lock hides some handles.",
-    "New: Drag a shape, handle, new shape or selection box to the edge of the view and the page scrolls with you."
+    "Fix: Gradients and patterns paste into Word and PowerPoint as editable shapes, polygons too.",
+    "Fix: Shapes copied from Office keep their whole gradient, and patterns from Vellum Draw come back as patterns."
   ]
 }
